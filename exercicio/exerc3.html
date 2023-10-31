@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validação de senhas</title>
+</head>
+<body>
+    <script> 
+    
+        let nome, senha
+        
+        nome= prompt('qual o seu nome?');
+        senha= prompt('insira uma senha com no mínimo 8 caracteres');
+
+
+            if (senha.length >= 8) {
+                document.write('senha válida');
+            }
+                     else{
+                document.write('ERRO: a senha precisa ter pelo menos 8 caracters');
+            }
+
+
+    </script>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .baby {
+            width: 420px;
+            height: 300px;
+            cursor: pointer;
+        }
+    </style>
+    
+</body>
+</html>

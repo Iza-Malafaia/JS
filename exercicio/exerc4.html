@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ordem crescente</title>
+</head>
+<body>
+    <script> 
+    /* funcionou, mas não com numero compostos */
+        let a, b, c 
+        
+    
+        a=prompt('escreva um numero')
+        b=prompt('escreva outro numero')
+        c=prompt('escreva mais um numero')
+
+        if (a > b) {
+            [a, b] = [b, a];
+        }
+
+            else if (b > c) {
+                    [b, c] = [c, b];
+            }
+
+                if (a > b) {
+                    [a, b] = [b, a];
+            }
+                document.write(a + ',  ' + b + ',  '+ c);
+         
+          
+    </script>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .baby {
+            width: 420px;
+            height: 300px;
+            cursor: pointer;
+        }
+    </style>
+    
+</body>
+</html>
