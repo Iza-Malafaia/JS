@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>play score</title>
+</head>
+<body>
+    
+    <center>
+    <h1>Qual sua pontuação?</h1>
+    <div class="content"></div>
+    </center>
+
+<script>
+
+    const placar = document.querySelector('content');
+    let score = + prompt('Qual sua pontuação');
+       
+        if (score >= 1000){
+            placar.innerText="Você passou para a fase 2 !!";
+        } else {
+            placar.innerText = "Melhore sua pontuação para passar para a fase 2."; 
+        }
+
+</script>
+
+</body>
+</html>
